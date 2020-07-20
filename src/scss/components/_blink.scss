@@ -1,0 +1,42 @@
+// animates the blink effect
+.blink {
+  animation: $blink-time blinker linear infinite;
+  -webkit-animation: $blink-time blinker linear infinite;
+  -moz-animation: $blink-time blinker linear infinite;
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
