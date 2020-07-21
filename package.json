@@ -22,10 +22,7 @@
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
-    "svg-inline-loader": "^0.8.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "svg-inline-loader": "^0.8.2"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.0",
@@ -35,8 +32,21 @@
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.12.0",
     "react-icons": "^3.8.0",
+    "react-scripts": "^3.4.1",
     "styled-components": "^4.4.1",
     "styled-reset": "^4.2.1",
     "svg-url-loader": "^6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
