@@ -1,56 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@material-ui/core';
-import styled, { keyframes, css } from 'styled-components';
-import { FaPlay, FaPause } from 'react-icons/fa';
-
-const blinker = keyframes`
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
-const blinkAnimation = css`
-  animation: ${blinker} 1s linear infinite;
-`;
-
-const StyledTimeDisplay = styled.h1`
-  display: inline-block;
-  font-size: 6rem;
-  color: ${({ warning }) => (warning ? 'hsl(10, 90%, 50%)' : 'hsl(216, 10%, 10%)')};
-  ${({ blink }) => (blink ? blinkAnimation : null)};
-`;
-
-const StyledPlay = styled(FaPlay)`
-  height: 2rem;
-  width: 2rem;
-  margin-left: 2rem;
-  cursor: pointer;
-  fill: hsl(216, 10%, 10%);
-  &:hover {
-    fill: hsl(220, 5%, 65%);
-  }
-`;
-
-const StyledPause = styled(FaPause)`
-  height: 2rem;
-  width: 2rem;
-  margin-left: 2rem;
-  cursor: pointer;
-  fill: hsl(216, 10%, 10%);
-  &:hover {
-    fill: hsl(220, 5%, 65%);
-  }
-`;
-
-const RateButton = styled(Button)`
-  && {
-    margin:  0.5rem;
-  }
-`;
+import {
+  StyledTimeDisplay, StyledPlay, StyledPause, RateButton,
+} from './LocalStyledComponents';
 
 const Clock = ({
   secondsLeft, pause, resume, setRate, rate, paused,
@@ -103,5 +55,4 @@ Clock.defaultProps = {
   setRate: () => {},
   paused: false,
 };
-
 export default Clock;
