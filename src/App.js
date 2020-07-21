@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import InputForm from './components/InputForm';
-import Clock from './components/Clock';
-import { AlertText, CenteredTimer } from './components/LocalStyledComponents';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import InputForm from './components/InputForm.js';
+import Clock from './components/Clock.js';
+import { AlertText, CenteredTimer } from './components/LocalStyledComponents.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 
 const GlobalStyle = createGlobalStyle`
   body {
