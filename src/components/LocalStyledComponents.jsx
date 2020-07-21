@@ -39,7 +39,6 @@ const blinkAnimation = css`
 export const StyledTimeDisplay = styled.h1`
   display: block;
   font-size: 10rem;
-  width: 100%;
   margin-left: 20%;
   color: ${({ warning }) => (warning ? '#F0285B' : '#343a40')};
   ${({ blink }) => (blink ? blinkAnimation : null)};
@@ -48,9 +47,11 @@ export const StyledTimeDisplay = styled.h1`
 `;
 
 export const StyledPlay = styled(FaPlay)`
-  height: 2rem;
-  width: 2rem;
-  margin-left: 2rem;
+  height: 6rem;
+  width: 6rem;
+  justify-self: end;
+  align-self: end;
+  margin-left: 6rem;
   cursor: pointer;
   fill: #1DA1F2;
   &:hover {
@@ -59,9 +60,11 @@ export const StyledPlay = styled(FaPlay)`
 `;
 
 export const StyledPause = styled(FaPause)`
-  height: 2rem;
-  width: 2rem;
-  margin-left: 2rem;
+  height: 6rem;
+  width: 6rem;
+  justify-self: end;
+  align-self: end;
+  margin-left: 6rem;
   cursor: pointer;
   fill: #1DA1F2;
   &:hover {
@@ -80,10 +83,12 @@ export const RateButton = styled(Button)`
   background: #343a40;
   color: #d9d9d9;
   border-color: #1a1b23;
+  cursor: pointer;
   }
 `;
 export const RateGroup = styled(ButtonGroup)`
   padding: 0;
+  cursor: pointer;
 `;
 export const StyledHeader = styled(Navbar)`
 display: flex;
@@ -105,6 +110,7 @@ flex-basis: fit-content;
 justify-content: space-between;
 justify-items: right;
 border-top: 0.25rem solid #14171a;
+cursor: pointer;
 `;
 const spin = keyframes`
  from {
@@ -117,12 +123,14 @@ const spin = keyframes`
 export const StyledLogo = styled.img`
 width: 6rem;
 height: 6rem;
+cursor: crosshair;
 margin-right: 25%;
 margin-left: 0;
 background: #fff;
 border-radius: 25px;
 border: double 0.5rem #657786;
 animation: ${spin} infinite 25s linear;
+
 `;
 export const StyledIcon = styled.img`
 width: 3.5rem;
@@ -132,6 +140,7 @@ background: #fff;
 margin-top: 0.65rem;
 border: double 0.5rem #657786;
 float: right;
+cursor: crosshair;
 border-radius: 10px;
 animation: ${spin} infinite 25s linear;
 `;

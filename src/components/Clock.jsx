@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Row from 'react-bootstrap/Row';
+import { Col } from 'react-bootstrap';
 import {
   StyledTimeDisplay, StyledPlay, StyledPause, RateButton, RateGroup,
 } from './LocalStyledComponents';
@@ -17,19 +19,22 @@ const Clock = ({
   const iff = (condition, then, otherwise) => (condition ? then : otherwise);
   return (
     <div>
-      <div>
-        <StyledTimeDisplay
-          blink={shouldBlink()}
-          warning={shouldBeRed()}
-        >
-          {`${minutes}:${getSeconds()}`}
-        </StyledTimeDisplay>
+      <Row>
+        <Col className="col-7">
+          <StyledTimeDisplay
+            blink={shouldBlink()}
+            warning={shouldBeRed()}
+          >
+            {`${minutes}:${getSeconds()}`}
+          </StyledTimeDisplay>
+        </Col>
+
         {
           secondsLeft > 0
-            ? iff(paused, <StyledPlay onClick={resume} />, <StyledPause onClick={pause} />)
+            ? iff(paused, <Col className="col-4"><StyledPlay onClick={resume} /></Col>, <Col className="col-4"><StyledPause onClick={pause} /></Col>)
             : null
       }
-      </div>
+      </Row>
       <RateGroup variant="primary" aria-label="Rate Controls">
         <RateButton size="lg" type="button" disabled={rate === 1000} onClick={() => setRate(1000)}>1x</RateButton>
         <RateButton size="lg" type="button" disabled={rate === 750} onClick={() => setRate(750)}>1.5x</RateButton>

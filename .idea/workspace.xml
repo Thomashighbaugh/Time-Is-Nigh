@@ -25,7 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,6 +44,8 @@
       <recent name="$PROJECT_DIR$/src/components/Clock" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -111,6 +113,10 @@
     </state>
     <state x="2096" y="289" key="SettingsEditor/0.0.1600.900/1600.0.1920.1080/3520.0.1920.1080@1600.0.1920.1080" timestamp="1595306520039" />
     <state x="1936" y="255" key="SettingsEditor/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595266073872" />
+    <state x="2064" y="258" key="run.anything.popup" timestamp="1595371748125">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2064" y="258" key="run.anything.popup/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595371748125" />
     <state x="2063" y="277" width="672" height="678" key="search.everywhere.popup" timestamp="1595309759538">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
