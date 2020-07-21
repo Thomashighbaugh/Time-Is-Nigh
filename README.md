@@ -62,4 +62,8 @@ Being that this app was made primarily as the result of demonstrating my compete
 |--------------------|-------------|
 | SVG logo for site | the rotation makes it easier to look at the page |
 | React-Bootstrap Components | Included for responsiveness and rapid development |
-| Vercel Hosted Example |  
+| Vercel Hosted Example |  |
+| SVG Backgrounds by HeroPatterns | These backgrounds add a nice, modern visual flare to the site, providing texture to the interface |
+
+## Code
+The source code contained here within this repository is split up into components, per request, according to the layout of the site and inter-relations of the function. I have moved all of the styled components into one file, which might affect the site's conformity with *atomic design* but being that the styled components are specifically called within the site 
