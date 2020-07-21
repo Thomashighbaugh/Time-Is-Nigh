@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Form } from 'react-bootstrap';
-import { StyledForm } from './LocalStyledComponents';
+import { Form } from 'react-bootstrap';
+import { StyledButton, StyledForm } from './LocalStyledComponents';
 
 const InputForm = ({
   minutes, handleChange, handleSubmit, resetCounter, isCounting,
@@ -20,9 +20,9 @@ const InputForm = ({
         required
       />
     </Form.Group>
-    <Button disabled={minutes === 0} variant="primary" type="submit">
+    <StyledButton disabled={minutes === 0} variant="primary" type="submit">
       {isCounting ? 'Reset' : 'Start'}
-    </Button>
+    </StyledButton>
   </StyledForm>
 );
 

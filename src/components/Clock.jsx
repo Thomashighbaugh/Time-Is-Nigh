@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
-  StyledTimeDisplay, StyledPlay, StyledPause, RateButton,
+  StyledTimeDisplay, StyledPlay, StyledPause, RateButton, RateGroup,
 } from './LocalStyledComponents';
 
 const Clock = ({
@@ -29,11 +30,11 @@ const Clock = ({
             : null
       }
       </div>
-      <div>
-        <RateButton variant="contained" type="button" disabled={rate === 1000} onClick={() => setRate(1000)}>1x</RateButton>
-        <RateButton variant="contained" type="button" disabled={rate === 750} onClick={() => setRate(750)}>1.5x</RateButton>
-        <RateButton variant="contained" type="button" disabled={rate === 500} onClick={() => setRate(500)}>2x</RateButton>
-      </div>
+      <RateGroup variant="primary" aria-label="Rate Controls">
+        <RateButton size="lg" type="button" disabled={rate === 1000} onClick={() => setRate(1000)}>1x</RateButton>
+        <RateButton size="lg" type="button" disabled={rate === 750} onClick={() => setRate(750)}>1.5x</RateButton>
+        <RateButton size="lg" type="button" disabled={rate === 500} onClick={() => setRate(500)}>2x</RateButton>
+      </RateGroup>
     </div>
   );
 };
