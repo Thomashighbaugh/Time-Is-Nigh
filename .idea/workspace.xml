@@ -27,10 +27,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -75,10 +78,14 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2115" y="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595373159028">
+    <state x="1979" y="398" key="#ESLint" timestamp="1595377732954">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="2115" y="396" key="#com.intellij.fileTypes.FileTypeChooser/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595373159028" />
+    <state x="1979" y="398" key="#ESLint/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595377732954" />
+    <state x="2115" y="430" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595377510127">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2115" y="430" key="#com.intellij.fileTypes.FileTypeChooser/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595377510127" />
     <state x="2138" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595306269651">
       <screen x="1600" y="0" width="1920" height="1080" />
     </state>
@@ -88,30 +95,30 @@
     </state>
     <state x="2390" y="412" key="FileChooserDialogImpl/0.0.1600.900/1600.0.1920.1080/3520.0.1920.1080@1600.0.1920.1080" timestamp="1595288347861" />
     <state x="2230" y="412" key="FileChooserDialogImpl/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595315312530" />
-    <state width="1896" height="251" key="GridCell.Tab.0.bottom" timestamp="1595315489954">
+    <state width="1896" height="251" key="GridCell.Tab.0.bottom" timestamp="1595376581041">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1880" height="246" key="GridCell.Tab.0.bottom/0.0.1600.900/1600.0.1920.1080/3520.0.1920.1080@1600.0.1920.1080" timestamp="1595297507451" />
     <state width="1812" height="236" key="GridCell.Tab.0.bottom/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1595286310459" />
-    <state width="1896" height="251" key="GridCell.Tab.0.bottom/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595315489954" />
-    <state width="1896" height="251" key="GridCell.Tab.0.center" timestamp="1595315489954">
+    <state width="1896" height="251" key="GridCell.Tab.0.bottom/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595376581041" />
+    <state width="1896" height="251" key="GridCell.Tab.0.center" timestamp="1595376581041">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1880" height="246" key="GridCell.Tab.0.center/0.0.1600.900/1600.0.1920.1080/3520.0.1920.1080@1600.0.1920.1080" timestamp="1595297507451" />
     <state width="1812" height="236" key="GridCell.Tab.0.center/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1595286310459" />
-    <state width="1896" height="251" key="GridCell.Tab.0.center/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595315489954" />
-    <state width="1896" height="251" key="GridCell.Tab.0.left" timestamp="1595315489954">
+    <state width="1896" height="251" key="GridCell.Tab.0.center/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595376581041" />
+    <state width="1896" height="251" key="GridCell.Tab.0.left" timestamp="1595376581041">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1880" height="246" key="GridCell.Tab.0.left/0.0.1600.900/1600.0.1920.1080/3520.0.1920.1080@1600.0.1920.1080" timestamp="1595297507451" />
     <state width="1812" height="236" key="GridCell.Tab.0.left/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1595286310459" />
-    <state width="1896" height="251" key="GridCell.Tab.0.left/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595315489954" />
-    <state width="1896" height="251" key="GridCell.Tab.0.right" timestamp="1595315489954">
+    <state width="1896" height="251" key="GridCell.Tab.0.left/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595376581041" />
+    <state width="1896" height="251" key="GridCell.Tab.0.right" timestamp="1595376581041">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="1880" height="246" key="GridCell.Tab.0.right/0.0.1600.900/1600.0.1920.1080/3520.0.1920.1080@1600.0.1920.1080" timestamp="1595297507451" />
     <state width="1812" height="236" key="GridCell.Tab.0.right/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1595286310459" />
-    <state width="1896" height="251" key="GridCell.Tab.0.right/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595315489954" />
+    <state width="1896" height="251" key="GridCell.Tab.0.right/3360.0.1920.1080/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1595376581041" />
     <state x="2096" y="289" key="SettingsEditor" timestamp="1595306520039">
       <screen x="1600" y="0" width="1920" height="1080" />
     </state>

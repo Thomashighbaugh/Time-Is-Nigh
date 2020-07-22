@@ -8,6 +8,7 @@ import {
 } from "./components/LocalStyledComponents.js";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
+import { Container } from 'react-bootstrap';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -72,7 +73,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <Container fluid>
       <GlobalStyle />
       <Header />
       <CenteredTimer>
@@ -99,7 +100,7 @@ const App = () => {
         />
       </CenteredTimer>
       <Footer />
-    </div>
+    </Container>
   );
 };
 

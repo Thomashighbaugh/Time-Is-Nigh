@@ -26,6 +26,7 @@ Being that this app was made primarily as the result of demonstrating my compete
 | Functionality is divided into components | [x] |
 | Production ready appearance | [x] |
 | Hosted in public GitHub repo | [x] |
+
   
 ### Additions
     
@@ -35,9 +36,12 @@ Being that this app was made primarily as the result of demonstrating my compete
 | React-Bootstrap Components | Included for responsiveness and rapid development |
 | Vercel Hosted Example | In order to determine the production readiness of the site, I took advantage of JAMstack technology and deployed the site availabe [here](https://time-is-nigh.vercel.app/) |
 | SVG Backgrounds by HeroPatterns | These backgrounds add a nice, modern visual flare to the site, providing texture to the interface |
+| ESLint | Configured to be compliant or break, this forces the code to be written with best practices and a standard other than my own guiding it. |
 
 ## Code
-The source code contained here within this repository is split up into components, per request, according to the layout of the site and inter-relations of the function. I have moved all of the styled components into one file, which might affect the site's conformity with *atomic design* but being that the styled components are specifically called by import statements within the site's components as needed, so it doesn't reduce the overall individualized and specific nature of the styling. While originally a stalwart of SCSS as my pre-processor of choice, I am being won over by the Styled Components method as it enables the use of JS logic in the stylesheet itself while reducing the need for class and ID insanity. 
+The source code contained here within this repository is split up into components, per request, according to the layout of the site and inter-relations of the function. I have moved the various styled components into one file, which might affect the site's conformity with *atomic design*, but the components specifically call these specific styled components as needed, so it doesn't reduce the overall individualized and specific nature of the styling. While originally a stalwart of SCSS as my pre-processor of choice, I am being won over by the Styled Components method as it enables the use of JS logic in the stylesheet itself while reducing the need for class and ID insanity. 
+
+The utility of using React and JSX is putting the Javascript logic, and the structure (HTML) associated with it in the same file, which I did not tease out of the code, even after teasing out the styling as mentioned above. 
 
  
 
