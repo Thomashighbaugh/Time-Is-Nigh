@@ -51,7 +51,7 @@ The utility of using React and JSX is putting the Javascript logic, and the stru
 | InputForm |  Start/Reset Button |
 
 ## Aesthetics 
-The design of the site uses HeroPattern's SVGs as backgrounds, as mentioned above, as the primary means of making the appearance more pleasant by applying texture to the interface. Google's Bungee font in then used as a means of making the text more readable and thick in larger sizes. The color pattern is taken from the default color pallete used by Twitter, which was an allusion to using Bootstrap to make the interface. 
+The design of the site uses HeroPattern's SVGs as backgrounds, as mentioned above, as the primary means of making the appearance more pleasant by applying texture to the interface. Google's Titan One font in then used as a means of making the text more readable and thick in larger sizes. The color pattern is taken from the default color pallete used by Twitter, which was an allusion to using Bootstrap to make the interface. 
 
 The spinning of the icons in the Header and Footer is taken from the default created when using `create-react-app` and is a modified version of that animation.  The use of text shadow on the light text against a dark backdrop is a discovery I have made for purposes of making this text more easily read and tying the color palette together.
 

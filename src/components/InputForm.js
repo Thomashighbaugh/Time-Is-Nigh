@@ -12,7 +12,7 @@ const InputForm = ({
 }) => (
   <StyledForm onSubmit={isCounting ? resetCounter : handleSubmit}>
     <Form.Group controlId="formCountdownMinutes">
-      <Form.Label htmlFor="timer">Countdown (minutes)</Form.Label>
+      <Form.Label htmlFor="timer" >Enter Minutes Below</Form.Label>
       <Form.Control
         placeholder="0"
         onChange={handleChange}
