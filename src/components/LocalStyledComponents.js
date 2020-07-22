@@ -146,15 +146,15 @@ export const StyledBrand = styled(Navbar.Brand)`
   font-family: "Titan One", sans-serif;
   text-align: right;
   font-size: 3.5rem;
-  margin-right: 2.5%;
+  padding-right: 2.5%;
   text-shadow: 0.165rem 0.165rem #1da1f2;
 `;
 export const StyledLink = styled.a`
   color: #fff;
   text-shadow: 0.165rem 0.165rem #1da1f2;
   font-size: 1.75rem;
-  margin-left: 0.75rem;
-  margin-bottom: 2.5%;
+  padding-left: 0.75rem;
+  padding-bottom: 2.5%;
   &:hover {
     color: #657786;
     text-shadow: 0.165rem 0.165rem #ffffff;
