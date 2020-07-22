@@ -10,7 +10,6 @@ import {
   RateButton,
   RateGroup,
 } from "./LocalStyledComponents";
-import RateButtonGroup from "./Buttons";
 
 const Clock = ({ secondsLeft, pause, resume, setRate, rate, paused }) => {
   const getSeconds = () => `0${secondsLeft % 60}`.slice(-2);
@@ -43,7 +42,32 @@ const Clock = ({ secondsLeft, pause, resume, setRate, rate, paused }) => {
             )
           : null}
       </Row>
-      <RateButtonGroup />
+      <RateGroup variant="primary" aria-label="Rate Controls">
+        <RateButton
+          size="lg"
+          type="button"
+          disabled={rate === 1000}
+          onClick={() => setRate(1000)}
+        >
+          1x
+        </RateButton>
+        <RateButton
+          size="lg"
+          type="button"
+          disabled={rate === 750}
+          onClick={() => setRate(750)}
+        >
+          1.5x
+        </RateButton>
+        <RateButton
+          size="lg"
+          type="button"
+          disabled={rate === 500}
+          onClick={() => setRate(500)}
+        >
+          2x
+        </RateButton>
+      </RateGroup>
     </div>
   );
 };

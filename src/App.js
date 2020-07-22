@@ -8,7 +8,7 @@ import {
 } from "./components/LocalStyledComponents.js";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
-import { Container } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 
 const GlobalStyle = createGlobalStyle`
   body {
