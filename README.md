@@ -1,6 +1,8 @@
 # The Time is Nigh
 A simple countdown timer written in React as a demonstration. [Hosted Version Here](https://time-is-nigh.vercel.app/)
 
+![Wholepage](/public/images/wholepage.png)
+---
 ## Table of Contents
 - [Features](#Features)
     - [Requested](#Requested)
