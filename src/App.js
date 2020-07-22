@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { createGlobalStyle } from 'styled-components';
-import InputForm from './components/InputForm.js';
-import Clock from './components/Clock.js';
-import { AlertText, CenteredTimer } from './components/LocalStyledComponents.js';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
+import React, { useState, useEffect } from "react";
+import { createGlobalStyle } from "styled-components";
+import InputForm from "./components/InputForm.js";
+import Clock from "./components/Clock.js";
+import {
+  AlertText,
+  CenteredTimer,
+} from "./components/LocalStyledComponents.js";
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -47,7 +50,7 @@ const App = () => {
     setSecondsLeft(secondsLeft - 1);
   };
 
-  const resetCounter = e => {
+  const resetCounter = (e) => {
     e.preventDefault();
     setPaused(false);
     setSecondsLeft(0);
@@ -55,7 +58,7 @@ const App = () => {
     setMinutes(0);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setPaused(false);
     setIsCounting(true);
@@ -63,7 +66,7 @@ const App = () => {
     setSecondsLeft(minutesToSeconds - 1);
   };
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setMinutes(parseInt(e.target.value, 10));
     setIsCounting(false);
   };
@@ -80,14 +83,12 @@ const App = () => {
           handleChange={handleChange}
           resetCounter={resetCounter}
         />
-        {
-        secondsLeft <= halfOriginal
-          && isCounting
-          && secondsLeft >= 1 ? <AlertText>More than halfway there!</AlertText> : null
-      }
-        {
-        secondsLeft === 0 && isCounting ? <AlertText>Time&#39;s up!</AlertText> : null
-      }
+        {secondsLeft <= halfOriginal && isCounting && secondsLeft >= 1 ? (
+          <AlertText>More than halfway there!</AlertText>
+        ) : null}
+        {secondsLeft === 0 && isCounting ? (
+          <AlertText>Time&#39;s up!</AlertText>
+        ) : null}
         <Clock
           secondsLeft={secondsLeft}
           pause={handlePause}

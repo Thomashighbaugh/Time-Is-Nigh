@@ -1,19 +1,19 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ["babel-loader", "eslint-loader"],
       },
       {
         test: /\.svg$/,
         use: [
           {
-            loader: 'svg-url-loader',
+            loader: "svg-url-loader",
             options: {
               limit: 10000,
             },
@@ -23,18 +23,16 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ["*", ".js", ".jsx"],
   },
   output: {
     path: `${__dirname}/dist`,
-    publicPath: '/',
-    filename: 'bundle.js',
+    publicPath: "/",
+    filename: "bundle.js",
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: "./dist",
     hot: true,
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 };

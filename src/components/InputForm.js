@@ -1,10 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Form } from 'react-bootstrap';
-import { StyledButton, StyledForm } from './LocalStyledComponents';
+import React from "react";
+import PropTypes from "prop-types";
+import { Form } from "react-bootstrap";
+import { StyledButton, StyledForm } from "./LocalStyledComponents";
 
 const InputForm = ({
-  minutes, handleChange, handleSubmit, resetCounter, isCounting,
+  minutes,
+  handleChange,
+  handleSubmit,
+  resetCounter,
+  isCounting,
 }) => (
   <StyledForm onSubmit={isCounting ? resetCounter : handleSubmit}>
     <Form.Group controlId="formCountdownMinutes">
@@ -13,7 +17,7 @@ const InputForm = ({
         placeholder="0"
         onChange={handleChange}
         id="timer"
-        inputProps={{ min: '0' }}
+        inputProps={{ min: "0" }}
         name="timer"
         type="number"
         value={minutes}
@@ -21,7 +25,7 @@ const InputForm = ({
       />
     </Form.Group>
     <StyledButton disabled={minutes === 0} variant="primary" type="submit">
-      {isCounting ? 'Reset' : 'Start'}
+      {isCounting ? "Reset" : "Start"}
     </StyledButton>
   </StyledForm>
 );

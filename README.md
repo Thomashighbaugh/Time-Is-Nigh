@@ -1,5 +1,5 @@
 # The Time is Nigh
-A simple countdown timer written in React as a demonstration. 
+A simple countdown timer written in React as a demonstration. [Hosted Version Here](https://time-is-nigh.vercel.app/)
 
 ## Table of Contents
 - [Features](#Features)
@@ -33,9 +33,11 @@ Being that this app was made primarily as the result of demonstrating my compete
 |--------------------|-------------|
 | SVG logo for site | the rotation makes it easier to look at the page |
 | React-Bootstrap Components | Included for responsiveness and rapid development |
-| Vercel Hosted Example |  |
+| Vercel Hosted Example | In order to determine the production readiness of the site, I took advantage of JAMstack technology and deployed the site availabe [here](https://time-is-nigh.vercel.app/) |
 | SVG Backgrounds by HeroPatterns | These backgrounds add a nice, modern visual flare to the site, providing texture to the interface |
 
 ## Code
-The source code contained here within this repository is split up into components, per request, according to the layout of the site and inter-relations of the function. I have moved all of the styled components into one file, which might affect the site's conformity with *atomic design* but being that the styled components are specifically called within the site 
+The source code contained here within this repository is split up into components, per request, according to the layout of the site and inter-relations of the function. I have moved all of the styled components into one file, which might affect the site's conformity with *atomic design* but being that the styled components are specifically called by import statements within the site's components as needed, so it doesn't reduce the overall individualized and specific nature of the styling. While originally a stalwart of SCSS as my pre-processor of choice, I am being won over by the Styled Components method as it enables the use of JS logic in the stylesheet itself while reducing the need for class and ID insanity. 
+
+ 
 
