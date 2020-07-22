@@ -73,7 +73,7 @@ const App = () => {
   };
 
   return (
-    <Container fluid>
+    <div>
       <GlobalStyle />
       <Header />
       <CenteredTimer>
@@ -100,7 +100,7 @@ const App = () => {
         />
       </CenteredTimer>
       <Footer />
-    </Container>
+    </div>
   );
 };
 
